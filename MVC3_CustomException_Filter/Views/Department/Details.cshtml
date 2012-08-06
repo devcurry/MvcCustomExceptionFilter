@@ -1,0 +1,25 @@
+﻿@model MVC3_CustomException_Filter.Models.Department
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<fieldset>
+    <legend>Department</legend>
+
+    <div class="display-label">Dname</div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Dname)
+    </div>
+
+    <div class="display-label">Location</div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Location)
+    </div>
+</fieldset>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id=Model.DeptNo }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
